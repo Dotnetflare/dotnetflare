@@ -1,7 +1,7 @@
-# DotNetMastery
+# Dotnet Flare
 
 ## Overview
-**DotNetMastery** is an extensive open-source repository designed to cover the entire world of **C#** and **.NET** programming. The project encompasses everything from basic syntax and data structures to advanced design patterns, architectural principles, and integrations with databases and cloud platforms.
+**Dotnet Flare** is an extensive open-source repository designed to cover the entire world of **C#** and **.NET** programming. The project encompasses everything from basic syntax and data structures to advanced design patterns, architectural principles, and integrations with databases and cloud platforms.
 
 Whether you're a beginner, an intermediate developer, or an expert, this repository serves as a one-stop resource to:
 - Learn **C# language features** from the ground up.
@@ -67,5 +67,5 @@ To clone and run this repository locally, you need to have the following tools i
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/AshkanAfsharpour/DotNetMastery.git
-cd DotNetMastery
+git clone https://github.com/AshkanAfsharpour/dotnetflare.git
+cd dotnetflare

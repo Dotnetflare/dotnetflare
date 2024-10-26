@@ -1,6 +1,7 @@
 ﻿#region Array
 BenchmarkRunner.Run<ArrayOperationsBenchmark>();
 BenchmarkRunner.Run<DynamicArrayBenchmark>();
+BenchmarkRunner.Run<MultidimensionalArrayBenchmark>();
 #endregion
 
 #region Stack

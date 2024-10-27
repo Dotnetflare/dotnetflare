@@ -1,7 +1,5 @@
 name: Auto Assign
 on:
-  issues:
-    types: [opened]
   pull_request:
     types: [opened]
 jobs:

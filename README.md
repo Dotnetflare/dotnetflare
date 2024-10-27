@@ -13,7 +13,7 @@ This repository is designed to help developers enhance their skills, contribute 
 
 ## Roadmap
 
-The development of DotNetFlare follows a structured roadmap, laying out the path from basic to advanced topics. You can explore the full roadmap, organized into milestones, here: (https://github.com/AshkanAfsharpour/DotNetMastery/issues/7).
+The development of DotNetFlare follows a structured roadmap, laying out the path from basic to advanced topics. You can explore the full roadmap, organized into milestones, here: [Dotnet Flare Roadmap](https://github.com/Dotnetflare/dotnetflare/issues/7).
 
 ## How to Contribute
 

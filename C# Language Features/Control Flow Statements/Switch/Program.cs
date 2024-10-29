@@ -1,4 +1,6 @@
-﻿namespace SwitchExample;
+﻿using System;
+
+namespace SwitchExample;
 
 class Program
 {
@@ -123,5 +125,35 @@ class Program
         // 2. If a match is found, the code for that case executes, and the program exits the switch.
         // 3. If no match is found, the default case runs, providing an error message.
         // 4. This control structure is useful for cleaner code when checking a single variable against known values.
+
+
+        // Best Practices for `switch` Statements:
+
+        // 1. Prefer `switch` Expressions (C# 8+):
+        //    - Starting with C# 8, `switch` expressions provide a concise way to handle multiple conditions in a single expression.
+        //    - This can simplify code and improve readability.
+
+        // 2. Use `default` for Unhandled Cases:
+        //    - Always include a `default` case to handle unexpected values, even if it’s just to log or throw an exception.
+        //    - This ensures code is safe and handles cases not covered by specific `case` labels.
+
+        // 3. Group Cases with Similar Logic:
+        //    - If multiple cases have the same logic, you can group them without duplicating code.
+        //    Example:
+        //switch (dayOfWeek)
+        //{
+        //    case "Saturday":
+        //    case "Sunday":
+        //        Console.WriteLine("Weekend");
+        //        break;
+        //    default:
+        //        Console.WriteLine("Weekday");
+        //        break;
+        //}
+
+        // 4. Avoid Complex Logic in `switch` Statements:
+        //    - Use `switch` primarily for simple value comparisons.
+        //    - For complex logic or multiple conditions, consider using `if-else` statements for better control and readability.
+
     }
 }

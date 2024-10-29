@@ -53,5 +53,25 @@ class Program
         // Advantages of using a for loop:
         // - Provides a clear, concise syntax for repeating code with a known number of iterations.
         // - Ideal for situations where you know the number of times the loop should run in advance.
+
+
+        // Best Practices for `for` Loops:
+
+        // 1. Choose the Right Loop Type:
+        //    - Use a `for` loop when the number of iterations is known or can be calculated.
+        //    - Avoid using `for` loops when a different structure (like `while`) would improve readability.
+
+        // 2. Avoid Modifying Loop Counter Inside the Loop Body:
+        //    - Changing the loop variable (`i`) inside the loop body can lead to confusing and hard-to-debug code.
+        //    - Instead, modify only within the loop’s initialization, condition, or increment sections.
+
+        // 3. Limit Scope of Loop Variables:
+        //    - Use loop variables that are limited to the loop’s scope (e.g., `for (int i = 0; i < n; i++)`).
+        //    - This helps prevent accidental misuse outside the loop.
+
+        // 4. Minimize Operations Inside the Loop Condition:
+        //    - Avoid performing complex calculations in the loop condition as it will execute on every iteration.
+        //    - Move constant expressions outside the loop for better performance.
+
     }
 }

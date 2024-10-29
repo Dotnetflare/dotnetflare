@@ -91,5 +91,31 @@ class Program
         // 2. As soon as it finds a true condition, it executes that block and skips the rest.
         // 3. If none of the conditions are true, it defaults to the 'else' block.
         // This allows efficient branching where only one path is taken depending on the first true condition.
+
+
+        // Best Practices for `if-else` Statements:
+
+        // 1. Minimize Nested `if` Statements:
+        //    - Deeply nested `if` statements can make code hard to read and maintain.
+        //    - Use guard clauses to exit early, especially if certain conditions make further checks unnecessary.
+        //    Example:
+        //if (!isValid) return; // Guard clause instead of additional nesting.
+
+        // 2. Use `else if` for Mutually Exclusive Conditions:
+        //    - To avoid multiple `else` levels, use `else if` for conditions that are mutually exclusive.
+        //    - This improves readability and avoids unnecessary condition checks.
+
+        // 3. Avoid Redundant Conditions:
+        //    - If conditions overlap, ensure that only the necessary checks are used.
+        //    - Redundant checks can lead to inefficient code and may cause logical errors.
+
+        // 4. Be Cautious with Floating Point Comparisons:
+        //    - When comparing floating-point numbers, avoid direct equality checks due to precision issues.
+        //    - Instead, check if the difference is within a small tolerance, e.g., `Math.Abs(a - b) < tolerance`.
+
+        // 5. Use Ternary Operators for Simple Assignments:
+        //    - For simple conditional assignments, consider using the ternary operator to keep the code concise.
+        //    Example:
+        //int ageCategory = age > 18 ? "Adult" : "Minor";
     }
 }

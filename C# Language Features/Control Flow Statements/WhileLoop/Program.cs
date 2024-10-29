@@ -54,5 +54,22 @@ class Program
         // - Useful when the number of iterations is not predetermined.
         // - Continues as long as the condition is true, making it ideal for scenarios where the end condition
         //   is determined dynamically within the loop.
+
+
+        // Best Practices for `while` Loops:
+
+        // 1. Use `while` for Unknown or Dynamic Iteration Counts:
+        //    - Use a `while` loop when the number of iterations is not known in advance and depends on conditions within the loop.
+        //    - Avoid using it if a set iteration count can be determined, as a `for` loop may be more appropriate.
+
+        // 2. Always Ensure the Loop Condition Can Become False:
+        //    - To avoid infinite loops, ensure that the condition can eventually be met by modifying a variable or state inside the loop.
+
+        // 3. Avoid Complex Conditions:
+        //    - Complex conditions can make `while` loops hard to read. Break down complicated logic into helper functions if needed.
+
+        // 4. Minimize Operations Inside the Condition:
+        //    - Avoid performing unnecessary operations within the `while` condition to prevent excessive processing.
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿namespace IfElseExample;
+
 class Program
 {
     /// <summary>

@@ -45,6 +45,6 @@ public class Assignment
         //It assigns the value of one operand to another.
         //i.e. the value of the right side operand to the left side operand.
         a = b;
-        Console.WriteLine($"a = b: {a}");
+        Console.WriteLine($"a = b: {a}\n");
     }
 }

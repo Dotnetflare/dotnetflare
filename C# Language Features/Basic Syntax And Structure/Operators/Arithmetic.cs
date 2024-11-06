@@ -28,6 +28,6 @@ public class Arithmetic
         Console.WriteLine($"increment a = {result}");
 
         result = b--;
-        Console.WriteLine($"decrement b = {result}");
+        Console.WriteLine($"decrement b = {result}\n");
     }
 }

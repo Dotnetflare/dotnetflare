@@ -30,6 +30,6 @@ public class Relational
 
         //Not equal: (denoted by “!=”): Validates not an equal relationship between the two operands.
         validate = a != b;
-        Console.WriteLine($"a != b: {validate}");
+        Console.WriteLine($"a != b: {validate}\n");
     }
 }

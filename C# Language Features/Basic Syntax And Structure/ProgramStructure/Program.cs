@@ -1,6 +1,8 @@
 ﻿// Define a namespace for the program
 // Namespaces without the curly braces are called file-scoped namespaces
 // You can add (;) end of the namespace
+using ProgramStructure.Constructors;
+
 namespace ProgramStructure
 {
     // Define a class within the namespace
@@ -22,6 +24,30 @@ namespace ProgramStructure
             int difference = calculator_3.Subtract(10, 4);
             Console.WriteLine($"Subtraction Result: {difference}");
 
+            #region Constructors
+
+            // Default Constructor
+            Vehicle vehicle1 = new("Toyota");
+
+            // Parameterized Constructor (Overloaded with two parameters)
+            Vehicle vehicle2 = new("Honda", "Civic");
+
+            // Parameterized Constructor (Overloaded with three parameters)
+            Vehicle vehicle3 = new("Ford", "Mustang", 2020);
+
+            // Constructor Chaining within the same class
+            Vehicle vehicle4 = new("Chevrolet", 2021);
+
+            // Copy Constructor
+            Vehicle vehicle5 = new(vehicle3);
+
+            // Using the private constructor via a static method
+            var vehicle6 = Vehicle.CreateDefaultVehicle();
+
+            // Constructor Chaining in Base Class
+            Car car1 = new("BMW", "X5", 2022, "Petrol");
+
+            #endregion
 
             Console.ReadKey();
         }

@@ -1,15 +1,18 @@
-﻿// Define a namespace for the program
-// Namespaces without the curly braces are called file-scoped namespaces
-// You can add (;) end of the namespace
-using ProgramStructure.Constructors;
+﻿using ProgramStructure.Constructors;
 
+// 1. Define a namespace for the program.
+// 2. Namespaces without the curly braces are called file-scoped namespaces,
+// you can add (;) end of the namespace
 namespace ProgramStructure
 {
     // Define a class within the namespace
     internal class Program
     {
-        // Main method: the entry point of the application
-        // You can use the "top level statement", in which case you will not see this method
+        /// <summary>
+        /// Main method: the entry point of the application
+        /// You can use the "top level statement", in which case you will not see this method
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             // Statement

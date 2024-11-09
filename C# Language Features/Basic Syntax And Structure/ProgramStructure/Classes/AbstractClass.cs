@@ -1,6 +1,8 @@
 ﻿namespace ProgramStructure.Classes;
 
 // Keywrod: abstract
+
+// 1.Access Modifire -> 2.Class Type (Optional) -> 3."class" Keyword -> 4.Class Name -> 5.{}
 public abstract class AbstractClass
 {
     public int Id { get; set; }

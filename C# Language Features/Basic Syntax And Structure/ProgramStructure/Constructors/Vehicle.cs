@@ -56,6 +56,12 @@ public class Vehicle
     {
         return new Vehicle();
     }
+
+    // Destructor (called when the object is being collected by the garbage collector)
+    ~Vehicle()
+    {
+        Console.WriteLine("Destructor Called");
+    }
 }
 
 // Inherited class demonstrating Constructor Chaining in Base Class

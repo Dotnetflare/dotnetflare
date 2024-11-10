@@ -99,3 +99,39 @@ A method typically consists of:
 **1**. Inline, anonymous methods often used with **delegates**, **events**, or **LINQ**.
 
 **2**. Syntax: **parameter => expression**.
+
+## 4. Method Overloading
+
+**1**. Allows defining multiple methods with the same name but different parameters.
+
+**2**. Enhances flexibility by allowing a method to handle various input types.
+
+## 5. Method Parameters
+
+**Value Parameters**: Default; pass values directly.
+
+**Reference Parameters** **(ref)**: Passes reference, allowing method to modify the original variable.
+
+**Out Parameters (out)**: Similar to ref, but only for output values.
+
+**Optional Parameters**: Allows setting default values, making parameters optional.
+
+**Named Parameters**: Specify parameter names when calling a method, regardless of order.
+
+## 6. Return Types and Return Statements
+
+**1**. Methods can return any data type, **void**, or **generic types**.
+
+**2**. Return statements terminate a method’s execution and return a value if specified.
+
+## Best Practices for Methods
+
+**Single Responsibility**: Each method should serve one specific purpose.
+
+**Descriptive Naming**: Use meaningful names that indicate the method's action.
+
+**Parameter Count**: Limit parameters to reduce complexity.
+
+**Avoid Side Effects**: Minimize unexpected changes to class state.
+
+**Method Size**: Keep methods concise to enhance readability.

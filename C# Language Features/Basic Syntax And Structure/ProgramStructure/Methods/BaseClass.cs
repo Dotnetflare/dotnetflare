@@ -12,7 +12,7 @@ public class BaseClass
 
         void LocalFunction()
         {
-            Console.WriteLine("LocalFunction in BaseClass called");
+            Console.WriteLine("LocalFunction in VirtualMethod called");
         }
 
         LocalFunction();

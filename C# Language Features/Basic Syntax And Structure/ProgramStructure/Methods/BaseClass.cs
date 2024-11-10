@@ -3,7 +3,7 @@
 public class BaseClass
 {
     // Lambda Expressions(Anonymous Methods)
-    Func<int, int> square = x => x * x;
+    public Func<int, int> square = x => x * x;
 
     // Virtual Method
     public virtual void VirtualMethod()
@@ -12,20 +12,20 @@ public class BaseClass
 
         void LocalFunction()
         {
-            Console.WriteLine("LocalFunction in VirtualMethod called");
+            Console.WriteLine("\nLocalFunction in VirtualMethod called");
         }
 
         LocalFunction();
 
         #endregion
 
-        Console.WriteLine("VirtualMethod in BaseClass");
+        Console.WriteLine("\nVirtualMethod in BaseClass");
     }
 
     // Static Method
     public static void StaticMethod()
     {
-        Console.WriteLine("Called StaticMethod from BaseClass");
+        Console.WriteLine("\nCalled StaticMethod from BaseClass");
     }
 
     #region Method Overloading
@@ -36,7 +36,7 @@ public class BaseClass
     }
     public void Print(string message)
     {
-        Console.WriteLine(message);
+        Console.WriteLine($"\n{message}");
     }
 
     #endregion
@@ -53,9 +53,9 @@ public class BaseClass
     }
 
     // Generic Method
-    public void GenericMethod<T>(T entity) where T : class
+    public void GenericMethod<T>(T entity)
     {
-
+        Console.WriteLine($"\n{entity}");
     }
 }
 
@@ -63,6 +63,14 @@ public abstract class Shape
 {
     // Abstract Method
     public abstract void Draw();
+}
+
+public class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("\nDrawing a circle");
+    }
 }
 
 public static class Extensions

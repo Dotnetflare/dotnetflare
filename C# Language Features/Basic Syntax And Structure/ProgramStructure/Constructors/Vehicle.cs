@@ -9,14 +9,14 @@ public class Vehicle
     // Private constructor - restricts instantiation
     private Vehicle()
     {
-        Console.WriteLine("Private Constructor called.");
+        Console.WriteLine("\nPrivate Constructor called.");
     }
 
     // Default Constructor
     public Vehicle(string owner)
     {
         Owner = owner;
-        Console.WriteLine($"Default Constructor called. Owner: {Owner}");
+        Console.WriteLine($"\nDefault Constructor called. Owner: {Owner}");
     }
 
     // Parameterized Constructor (Constructor Overloading - 1)
@@ -24,7 +24,7 @@ public class Vehicle
     {
         Owner = owner;
         Model = model;
-        Console.WriteLine($"Constructor Overload (Owner, Model) called. Owner: {Owner}, Model: {Model}");
+        Console.WriteLine($"\nConstructor Overload (Owner, Model) called. Owner: {Owner}, Model: {Model}");
     }
 
     // Parameterized Constructor (Constructor Overloading - 2)
@@ -33,13 +33,13 @@ public class Vehicle
         Owner = owner;
         Model = model;
         Year = year;
-        Console.WriteLine($"Parameterized Constructor called. Owner: {Owner}, Model: {Model}, Year: {Year}");
+        Console.WriteLine($"\nParameterized Constructor called. Owner: {Owner}, Model: {Model}, Year: {Year}");
     }
 
     // Constructor Chaining within the same class
     public Vehicle(string owner, int year) : this(owner, "Unknown Model", year)
     {
-        Console.WriteLine("Constructor Chaining within the same class called.");
+        Console.WriteLine("\nConstructor Chaining within the same class called.");
     }
 
     // Copy Constructor
@@ -48,7 +48,7 @@ public class Vehicle
         Owner = otherVehicle.Owner;
         Model = otherVehicle.Model;
         Year = otherVehicle.Year;
-        Console.WriteLine("Copy Constructor called.");
+        Console.WriteLine("\nCopy Constructor called.");
     }
 
     // Static method to instantiate using the private constructor
@@ -60,7 +60,7 @@ public class Vehicle
     // Destructor (called when the object is being collected by the garbage collector)
     ~Vehicle()
     {
-        Console.WriteLine("Destructor Called");
+        Console.WriteLine("\nDestructor Called");
     }
 }
 
@@ -73,6 +73,6 @@ public class Car : Vehicle
     public Car(string owner, string model, int year, string fuelType) : base(owner, model, year)
     {
         FuelType = fuelType;
-        Console.WriteLine($"Car Constructor called. FuelType: {FuelType}");
+        Console.WriteLine($"\nCar Constructor called. FuelType: {FuelType}");
     }
 }

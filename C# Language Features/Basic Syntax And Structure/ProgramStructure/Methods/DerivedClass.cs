@@ -8,6 +8,6 @@ public class DerivedClass : BaseClass
         base.VirtualMethod();
 
         // Custom implementation
-        Console.WriteLine("Final implementation method {BaseClass} -> {DerivedClass}");
+        Console.WriteLine("\nFinal implementation method {BaseClass} -> {DerivedClass}");
     }
 }

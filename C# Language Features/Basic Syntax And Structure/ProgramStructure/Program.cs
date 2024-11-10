@@ -36,7 +36,7 @@ namespace ProgramStructure
             #region Abstract
 
             // Instantiate DerivedFromAbstractClass, which inherits from AbstractClass
-            DerivedFromAbstractClass derivedInstance = new DerivedFromAbstractClass(1, "Introduction to Programming", "DotNet Flare");
+            DerivedFromAbstractClass derivedInstance = new(1, "Introduction to Programming", "DotNet Flare");
 
             // Call the GetInfo method, which is implemented in the derived class
             Console.WriteLine(derivedInstance.GetInfo());
@@ -61,7 +61,7 @@ namespace ProgramStructure
             #region Sealed
 
             // Instantiate SealedClass, which inherits from DerivedFromAbstractClass
-            SealedClass sealedInstance = new(1, "Advanced Programming", "Alice", 5);
+            SealedClass sealedInstance = new(1, "Advanced Programming", "DotNet Flare", 5);
 
             // Call the GetInfo method, which is overridden in SealedClass
             Console.WriteLine(sealedInstance.GetInfo());

@@ -31,6 +31,6 @@ public class DerivedFromAbstractClass : AbstractClass
     // Override method to provide specific info
     public override string GetInfo()
     {
-        return $"{Id}: {Title} by {Name}.";
+        return $"\n{Id}: {Title} by {Name}.";
     }
 }

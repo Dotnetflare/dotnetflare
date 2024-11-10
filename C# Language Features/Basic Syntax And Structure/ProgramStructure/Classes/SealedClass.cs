@@ -13,6 +13,6 @@ public sealed class SealedClass : DerivedFromAbstractClass
 
     public override string GetInfo()
     {
-        return $"{Id}: {Title} {Name} {Number}";
+        return $"\n{Id}: {Title} {Name} {Number}";
     }
 }

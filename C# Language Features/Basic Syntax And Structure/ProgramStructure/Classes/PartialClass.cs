@@ -15,6 +15,10 @@ public partial class PartialClass
 {
     public void DisplayItems()
     {
-        Console.WriteLine("PartialClass_2 Display Items");
+        Console.WriteLine("\nItems in PartialClass:");
+        foreach (var item in items)
+        {
+            Console.WriteLine(item);
+        }
     }
 }

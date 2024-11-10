@@ -1,4 +1,5 @@
-﻿using ProgramStructure.Constructors;
+﻿using ProgramStructure.Classes;
+using ProgramStructure.Constructors;
 using ProgramStructure.Methods;
 
 // 1. Define a namespace for the program.
@@ -27,6 +28,57 @@ namespace ProgramStructure
 
             var difference = calculator_3.Subtract(10, 4);
             Console.WriteLine($"Subtraction Result: {difference}");
+
+            Console.WriteLine("\n------Classes------");
+
+            #region Classes
+
+            #region Abstract
+
+            // Instantiate DerivedFromAbstractClass, which inherits from AbstractClass
+            DerivedFromAbstractClass derivedInstance = new DerivedFromAbstractClass(1, "Introduction to Programming", "DotNet Flare");
+
+            // Call the GetInfo method, which is implemented in the derived class
+            Console.WriteLine(derivedInstance.GetInfo());
+
+            #endregion
+
+            #region Partial
+
+            // Instantiate PartialClass
+            PartialClass partialInstance = new();
+
+            // Add items to the list
+            partialInstance.AddItem("Item 1");
+            partialInstance.AddItem("Item 2");
+            partialInstance.AddItem("Item 3");
+
+            // Display the items
+            partialInstance.DisplayItems();
+
+            #endregion
+
+            #region Sealed
+
+            // Instantiate SealedClass, which inherits from DerivedFromAbstractClass
+            SealedClass sealedInstance = new(1, "Advanced Programming", "Alice", 5);
+
+            // Call the GetInfo method, which is overridden in SealedClass
+            Console.WriteLine(sealedInstance.GetInfo());
+
+            #endregion
+
+            #region Static
+
+            // Create a list of items
+            List<string> staticItems = ["Static Item 1", "Static Item 2", "Static Item 3"];
+
+            // Call the static method from StaticClass to display items
+            StaticClass.DisplayStaticItems(staticItems);
+
+            #endregion
+
+            #endregion
 
             Console.WriteLine("\n------Constructors------");
 
@@ -71,35 +123,53 @@ namespace ProgramStructure
             // Call static method
             BaseClass.StaticMethod();
 
-            // Call method overloading
+            #region Call method overloading
+
             var number = 10;
             var result = baseClass.Print(number);
             Console.WriteLine("\nResult after Print overload with int: " + result);
             baseClass.Print("\nOverloaded Print with string");
 
-            // Call method with ref and out parameters
+            #endregion
+
+            #region Call method with ref and out parameters
+
             int x = 5, y = 10, z;
             var sum_result = baseClass.MethodParameterExample(x, ref y, out z);
             Console.WriteLine($"\nMethodParameterExample result: sum = {sum_result}, z = {z}");
 
+            #endregion
 
-            // Call generic method
+            #region Call generic method
+
             baseClass.GenericMethod("Hello");
             baseClass.GenericMethod(123);
 
-            // Use an extension method
+            #endregion
+
+            #region Use an extension method
+
             var sentence = "Hello, this is a sample sentence.";
             Console.WriteLine($"\nWord count: {sentence.WordCount()}");
 
-            // Use abstract class - implement Shape in a derived class
+            #endregion
+
+            #region Use abstract class - implement Shape in a derived class
+
             Shape shape = new Circle(); // Circle is a hypothetical class that inherits Shape
             shape.Draw();
 
-            // Instantiate DerivedClass
+            #endregion
+
+            #region DerivedClass
+
+            // Instantiate 
             DerivedClass derivedClass = new();
 
             // Call overridden VirtualMethod
             derivedClass.VirtualMethod();
+
+            #endregion
 
             #endregion
 
